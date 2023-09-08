@@ -1,5 +1,4 @@
-// / declaring my array of weekdays
-let weekDays = [
+let weekdays = [
     'Sunday',
     'Monday',
     'Tuesday',
@@ -7,18 +6,16 @@ let weekDays = [
     'Thursday',
     'Friday',
     'Saturday',
-    
-];
-//declaring our variable
-let day = document.querySelector("[data-testid ='currentDayOfTheWeek']");
-let time = document.querySelector("[data-testid ='currentUTCTime']");
+]
+let currentDay = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+let currentTime = document.querySelector('[data-testid="currentUTCTime"]')
 
-// the current time
 
-let now = new Date();
-let currentDay =weekDays[now.getUTCDay()];
-let currentUTCTime = now.toUTCString();
+let date = new Date();
+let currentDayOfTheWeek = weekdays[date.getDay()];
 
-//dom manipualtion
-day.textContent = currentDay;
-time.textContent = currentUTCTime
+let UTCmilliseconds = date.getTime();
+let formattedUTC = UTCmilliseconds.toLocaleString()
+
+currentDay.innerHTML = currentDayOfTheWeek;
+currentTime.innerHTML = formattedUTC

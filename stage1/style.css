@@ -1,0 +1,24 @@
+.section-center{
+    text-align: center;
+    font-weight: bold;
+    
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+h2,
+h4{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
