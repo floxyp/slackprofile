@@ -38,7 +38,7 @@ img{
  width: 100px;
  border-radius: 100%;
 }
-.slackName{
+.slackUserName{
     text-transform: capitalize;
     font-size: 2rem;
     color: rgb(163, 55, 15);
